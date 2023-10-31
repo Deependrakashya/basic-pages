@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <style>
+    /* Common styles */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .login {
+      font-family: ubuntu;
+      display: flex;
+      flex-flow: row;
+      background-color: aliceblue;
+    }
+
+    .image {
+      width: 45%;
+      margin: 1%;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .text {
+      font-family: ubuntu;
+      margin: 1%;
+      width: 46%;
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 2rem;
+      padding: 5px;
+      font-family: ubuntu;
+    }
+
+    input[type="text"] {
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 14px;
+      font-family: ubuntu;
+    }
+
+    .option {
+      display: flex;
+      font-family: ubuntu;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+
+    .option1,
+    .option2 {
+      text-align: left;
+      width: 45%;
+    }
+
+    #sumbit {
+      font-family: ubuntu;
+      background-color: rgb(97, 97, 255);
+      font-size: 1rem;
+      width: 100%;
+      margin:  auto;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .login {
+        width: 100%;
+        flex-flow: column;
+        height: auto;
+        flex-wrap: wrap;
+      }
+
+      .image,
+      .text {
+        width: 100%;
+        margin: 2% 0;
+      }
+ #textbox{
+  width: 87%;
+    margin: 7px 0px 6px 11px;
+ }
+      .image img {
+        height: auto;
+    width: 98%;
+    margin-left: 2px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="login">
+    <div class="image" id="image">
+      <img src="https://wallpaperaccess.com/full/3239444.jpg" alt="" />
+    </div>
+    <div class="text" id="textarea">
+      <h3>Login to continue</h3>
+      <input type="text" id="textbox" placeholder="Email" /><br />
+      <input type="text" id="textbox" placeholder="Password" />
+      <div class="option">
+        <div class="option1" id="remeber">
+          <input type="checkbox" id="checkbox"> Remember me
+        </div>
+        <div class="option2" id="forgot"> 
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+      <a href="hello.com">
+        <button id="sumbit">LOGIN</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
